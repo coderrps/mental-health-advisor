@@ -8,8 +8,6 @@ This is a web-based application designed to provide users with advice based on t
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
-- [Dependencies](#dependencies)
-- [License](#license)
 
 ## Features
 
