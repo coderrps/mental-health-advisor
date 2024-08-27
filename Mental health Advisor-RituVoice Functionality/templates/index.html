@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Mental Health Advisor</title>
+    <style>
+        #response-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mental Health Advisor</h1>
+    
+    <!-- Start Button -->
+    <div id="start-container">
+        <button id="start-button">Start</button>
+    </div>
+
+    <!-- Question and Options -->
+    <div id="question-container" style="display:none;">
+        <p id="question-text"></p>
+        <ul id="options-list"></ul>
+    </div>
+
+    <!-- Response Input -->
+    <div id="response-container">
+        <label for="response">Enter your option number:</label>
+        <input type="text" id="response" min="1" max="3" required>
+        <button id="submit-response">Next</button>
+    </div>
+
+    <!-- Advice Section -->
+    <div id="advice-container" style="display:none;">
+        <h2>Advice</h2>
+        <p id="advice-text"></p>
+    </div>
+    
+    <script>
+        let currentQuestionId = 1;
+
+        // Function to speak the text aloud
+        function speak(text, callback) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+
+            // Call the callback function when speech ends
+            utterance.onend = callback;
+        }
+
+        // Function to fetch the question and options
+        function fetchQuestion() {
+            fetch(`/get_question`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.advice) {
+                        // Show advice and hide question and response inputs
+                        document.getElementById('question-container').style.display = 'none';
+                        document.getElementById('response-container').style.display = 'none';
+                        document.getElementById('advice-container').style.display = 'block';
+                        document.getElementById('advice-text').innerText = data.advice;
+                        speak(data.advice);  // Speak the advice
+                    } else {
+                        // Display question and options
+                        document.getElementById('question-text').innerText = data.question;
+                        let optionsList = document.getElementById('options-list');
+                        optionsList.innerHTML = ''; // Clear previous options
+
+                        let textToSpeak = data.question + " ";
+
+                        data.options.forEach((option, index) => {
+                            let li = document.createElement('li');
+                            li.innerText = `${index + 1}. ${option}`;
+                            optionsList.appendChild(li);
+                            textToSpeak += `Option ${index + 1}. ${option}. `;
+                        });
+
+                        // Speak the question and options
+                        speak(textToSpeak, () => {
+                            // Show the response container when speech ends
+                            document.getElementById('response-container').style.display = 'block';
+                            // Reset the input value
+                            document.getElementById('response').value = '';
+                            document.getElementById('response').focus();
+                        });
+                    }
+                });
+        }
+
+        // Function to submit the user's response
+        function submitResponse() {
+            let response = document.getElementById('response').value;
+            if (!response || response < 1 || response > 3) {
+                alert('Please enter a valid option number between 1 and 3.');
+                return;
+            }
+
+            // Hide the response container before sending the response
+            document.getElementById('response-container').style.display = 'none';
+
+            fetch('/submit_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    current_question_id: currentQuestionId,
+                    response: response
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.is_last_question) {
+                        // Fetch advice if it was the last question
+                        fetchQuestion();
+                    } else {
+                        // Move to the next question
+                        currentQuestionId = data.next_question_id;
+                        fetchQuestion();
+                    }
+                });
+        }
+
+        // Event listener for the "Start" button
+        document.getElementById('start-button').addEventListener('click', function() {
+            document.getElementById('start-container').style.display = 'none';
+            document.getElementById('question-container').style.display = 'block';
+            fetchQuestion();  // Fetch and speak the first question
+        });
+
+        document.getElementById('submit-response').addEventListener('click', submitResponse);
+    </script>
+</body>
+</html>
