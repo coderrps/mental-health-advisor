@@ -1,0 +1,101 @@
+﻿id,question,option1,option2,option3,next_question_id_option1,next_question_id_option2,next_question_id_option3
+1,What is your primary concern?,Mental health issues,Work-life balance,Relationship problems,2,3,4
+2,How do you manage stress?,Exercise,Socializing,Other,5,6,7
+3,How often do you feel overwhelmed?,Rarely,Sometimes,Often,8,9,10
+4,How do you deal with relationship issues?,Talk to someone,Ignore them,Seek professional help,11,12,13
+5,How often do you exercise?,Daily,Weekly,Occasionally,14,15,16
+6,How do you feel after socializing?,Rejuvenated,Tired,Indifferent,17,18,19
+7,What other methods do you use for stress?,Meditation,Reading,Other,20,21,22
+8,What causes you to feel overwhelmed?,Work,Personal life,Other,23,24,25
+9,How do you cope with feeling overwhelmed?,Take a break,Talk to someone,Seek professional help,26,27,28
+10,What helps you the most when you're overwhelmed?,Exercise,Social support,Professional help,29,30,31
+11,How do you feel after talking to someone about your issues?,Relieved,Unchanged,More stressed,32,33,34
+12,How effective is ignoring relationship issues?,Very effective,Somewhat effective,Not effective,35,36,37
+13,What type of professional help do you seek?,Therapy,Counseling,Other,38,39,40
+14,How do you stay motivated to exercise regularly?,Set goals,Join a group,Other,41,42,43
+15,How do you find time to exercise?,Morning,Evening,Whenever possible,44,45,46
+16,How do you feel about your exercise routine?,Satisfied,Unsatisfied,Need to improve,47,48,49
+17,How does socializing affect your mental health?,Positive,Neutral,Negative,50,51,52
+18,How often do you feel tired after socializing?,Rarely,Sometimes,Often,53,54,55
+19,What kind of social activities do you prefer?,Active,Relaxing,Social gatherings,56,57,58
+20,How does meditation help you?,Reduces stress,Improves focus,No effect,59,60,61
+21,What kind of reading helps you?,Self-help books,Fiction,Non-fiction,62,63,64
+22,What other stress management techniques do you use?,Hobbies,Exercise,Other,65,66,67
+23,How do you manage work-related stress?,Take breaks,Delegate tasks,Seek support,68,69,70
+24,How do you manage stress from personal life?,Talk to friends,Engage in hobbies,Seek help,71,72,73
+25,What is your biggest stressor?,Workload,Personal issues,Other,74,75,76
+26,What is your preferred method for coping with stress?,Physical activity,Social support,Professional help,77,78,79
+27,How do you seek professional help?,Therapy,Online resources,Support groups,80,81,82
+28,How effective is talking to someone for you?,Very effective,Somewhat effective,Not effective,83,84,85
+29,How do you prefer to exercise?,Gym,Outdoor activities,Home workouts,86,87,88
+30,How often do you seek professional help?,Regularly,Occasionally,Never,89,90,91
+31,What type of social support is most helpful?,Family,Friends,Support groups,92,93,94
+32,How do you feel after receiving professional help?,Relieved,Unchanged,More stressed,95,96,97
+33,How do you feel after receiving emotional support?,Rejuvenated,Neutral,More stressed,98,99,100
+34,How effective is seeking professional help for you?,Very effective,Somewhat effective,Not effective,101,102,103
+35,How do you handle unresolved relationship issues?,Seek counseling,Address them later,Ignore them,104,105,106
+36,How often do you practice self-care?,Daily,Weekly,Occasionally,107,108,109
+37,What is your preferred self-care activity?,Meditation,Exercise,Hobbies,110,111,112
+38,What kind of therapy do you prefer?,Cognitive Behavioral Therapy,Psychodynamic Therapy,Other,113,114,115
+39,How often do you attend therapy sessions?,Weekly,Monthly,Occasionally,116,117,118
+40,How effective do you find therapy?,Very effective,Somewhat effective,Not effective,119,120,121
+41,How do you keep track of your exercise goals?,Journal,Apps,Personal reminders,122,123,124
+42,How often do you engage in group exercises?,Regularly,Occasionally,Never,125,126,127
+43,How do you stay engaged in exercise routines?,Set goals,Find a workout buddy,Other,128,129,130
+44,What time of day do you prefer to exercise?,Morning,Afternoon,Evening,131,132,133
+45,How do you feel about exercising in the evening?,Energizing,Relaxing,Disruptive,134,135,136
+46,How do you adapt your routine to fit exercise?,Adjust work schedule,Exercise on weekends,Other,137,138,139
+47,How do you feel about your current exercise routine?,Satisfied,Need changes,Not effective,140,141,142
+48,What changes would you make to your exercise routine?,Increase frequency,Try new activities,Other,143,144,145
+49,What motivates you to improve your exercise routine?,Goals,Rewards,Support,146,147,148
+50,How does socializing impact your mental health?,Positive impact,No impact,Negative impact,149,150,151
+51,What type of social interactions do you prefer?,One-on-one,Small groups,Larger gatherings,152,153,154
+52,How often do you engage in social interactions?,Daily,Weekly,Monthly,155,156,157
+53,How do you feel after socializing with friends?,Energized,Neutral,Drained,158,159,160
+54,How do you feel after attending social events?,Excited,Indifferent,Overwhelmed,161,162,163
+55,How does your social life affect your overall mood?,Positively,Negatively,No effect,164,165,166
+56,What type of social activities do you enjoy the most?,Outdoor activities,Indoor activities,Social events,167,168,169
+57,How do you prefer to socialize?,In-person,Online,Phone calls,170,171,172
+58,How do you feel after engaging in your preferred social activities?,Happy,Neutral,Disappointed,173,174,175
+59,How does meditation affect your stress levels?,Reduces stress,Improves focus,No impact,176,177,178
+60,What benefits do you experience from meditation?,Reduced anxiety,Improved concentration,Better sleep,179,180,181
+61,How often do you practice meditation?,Daily,Weekly,Occasionally,182,183,184
+62,What types of books do you read for stress relief?,Self-help,Inspirational,Relaxation,185,186,187
+63,How does reading help you?,Provides escape,Improves mood,Increases knowledge,188,189,190
+64,How often do you read for stress relief?,Daily,Weekly,Occasionally,191,192,193
+65,What other techniques do you use for managing stress?,Hobbies,Exercise,Relaxation techniques,194,195,196
+66,How effective are these techniques for you?,Very effective,Somewhat effective,Not effective,197,198,199
+67,What other stress management techniques do you find helpful?,Mindfulness,Deep breathing,Other,200,201,202
+68,What is your primary method for managing work-related stress?,Taking breaks,Seeking support,Managing workload,203,204,205
+69,How effective is taking breaks for you?,Very effective,Somewhat effective,Not effective,206,207,208
+70,What type of support do you seek for work-related stress?,Colleagues,Manager,External resources,209,210,211
+71,What is your primary method for managing personal life stress?,Talking to friends,Engaging in hobbies,Seeking professional help,212,213,214
+72,How effective is talking to friends for you?,Very effective,Somewhat effective,Not effective,215,216,217
+73,What hobbies help you manage stress?,Creative activities,Outdoor activities,Relaxation activities,218,219,220
+74,What is your biggest stressor?,Workload,Personal issues,Other,221,222,223
+75,How do you manage workload-related stress?,Prioritization,Delegation,Time management,224,225,226
+76,What personal issues cause you the most stress?,Family,Health,Financial issues,227,228,229
+77,What method works best for you to cope with stress?,Exercise,Social support,Professional help,230,231,232
+78,How do you find social support?,Friends,Family,Support groups,233,234,235
+79,What type of professional help do you prefer?,Therapy,Coaching,Support groups,236,237,238
+80,How often do you seek professional help?,Regularly,Occasionally,Never,239,240,241
+81,What type of support is most beneficial?,Emotional support,Practical help,Guidance,242,243,244
+82,What is your primary coping strategy?,Active coping,Support seeking,Avoidance,245,246,247
+83,How effective is talking to someone for you?,Very effective,Somewhat effective,Not effective,248,249,250
+84,How do you prefer to receive emotional support?,Face-to-face,Online,Phone,251,252,253
+85,How do you feel after receiving emotional support?,Rejuvenated,Neutral,More stressed,254,255,256
+86,How do you prefer to exercise?,Individually,In a group,With a trainer,257,258,259
+87,What motivates you to exercise?,Health benefits,Social interaction,Personal achievement,260,261,262
+88,What type of workouts do you enjoy?,Cardio,Strength training,Flexibility exercises,263,264,265
+89,How often do you seek professional help?,Monthly,Quarterly,Annually,266,267,268
+90,How do you feel about online therapy?,Convenient,Less personal,Effective,269,270,271
+91,What type of social support is most effective for you?,Emotional,Practical,Informational,272,273,274
+92,How often do you seek emotional support?,Frequently,Occasionally,Rarely,275,276,277
+93,What type of emotional support do you prefer?,Active listening,Advice,Sympathy,278,279,280
+94,How do you feel after receiving support from friends?,Comforted,Indifferent,More stressed,281,282,283
+95,What changes would you make to your therapy routine?,Increase frequency,Change therapist,Add techniques,284,285,286
+96,What is your preferred time for therapy?,Morning,Afternoon,Evening,287,288,289
+97,How effective is your current therapy routine?,Very effective,Moderately effective,Not effective,290,291,292
+98,How do you feel after attending therapy sessions?,Relieved,Unchanged,More stressed,293,294,295
+99,How often do you attend social events?,Weekly,Monthly,Rarely,296,297,298
+100,What type of social events do you enjoy the most?,Gatherings,Parties,Meetups,299,300,301
